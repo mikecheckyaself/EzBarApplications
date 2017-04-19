@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="EzBarApplication.interfaceOptions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EzBarApplication"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="480" Width="800">
+
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="interfaceOption">
+            <Setter Property="Width"  Value="150"/>
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,0" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Background" Value="Black"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="LightSteelBlue">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:ConnectionId='7' Name ="MixedDrinkInterfaceOption" Grid.Row="0" Grid.Column="0" Style="{StaticResource interfaceOption}"                     >
+                <Image Source ="ButtonIcons/martiniclipart.png">
+                </Image>
+            </Button>
+            <TextBlock Text="Mixed Drinks" RelativePanel.Below="MixedDrinkInterfaceOption" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="2,10,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+        </RelativePanel>
+
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
+            <Button x:ConnectionId='6' Name ="LiquorInterfaceOption" Grid.Row="0" Grid.Column="1" Style="{StaticResource interfaceOption}">
+            <Image Source ="ButtonIcons/bottleofliquor.png">
+            </Image>
+        </Button>
+            <TextBlock Text="Liquor Types" RelativePanel.Below="LiquorInterfaceOption" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="4,10,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+        </RelativePanel>
+
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2">
+            <Button x:ConnectionId='5' Name ="MixerInterfaceOption" Grid.Row="0" Grid.Column="2"  Style="{StaticResource interfaceOption}" >
+            <Image Source ="ButtonIcons/cocktailShaker2.jpg">
+            </Image>
+        </Button>
+            <TextBlock Text="Mixer Types" RelativePanel.Below="MixerInterfaceOption" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="8,10,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+        </RelativePanel>
+
+            <Button x:ConnectionId='1' Name ="RecentInterfaceOption" Grid.Row="1" Grid.Column="0" Style="{StaticResource interfaceOption}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="59,45,58,45">
+            <Image Source ="ButtonIcons/recent.png">
+            </Image>
+        </Button>
+            <TextBlock Text="Recently Ordered" Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="0,0,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+
+
+        <Button x:ConnectionId='2' Name ="Top25InterfaceOption" Grid.Row="1" Grid.Column="1" Style="{StaticResource interfaceOption}" >
+            <Image Source ="ButtonIcons/top25.png">
+            </Image>
+        </Button>
+        <TextBlock Text="Top 25 Drinks" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="0,90,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+
+        <Button x:ConnectionId='3' Name ="RandomDrinkInterfaceOption" Grid.Row="1" Grid.Column="2" Style="{StaticResource interfaceOption}" >
+            <Image Source ="ButtonIcons/randomDrink.png">
+            </Image>
+        </Button>
+        <TextBlock Text="Random Drink" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Style="{StaticResource ContentViewTemplate}" Margin="0,90,0,0" FontSize="24" RenderTransformOrigin="0.593,0.63"></TextBlock>
+
+
+        <TextBlock x:ConnectionId='4' Name ="currentStatus" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" Text="0" />
+        <TextBlock  Grid.Row="0" Grid.Column="2" Text="Status:" Margin="100,0,0,0" />
+
+       
+
+
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,6 @@
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\MainWindow.baml
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\App.g.cs
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\RFID_Reader_MarkupCompile.cache
+C:\Users\Michael\Desktop\UWPTutorials\EzBarApplication\Deletion\RFID_Reader\obj\x86\Debug\RFID_Reader_MarkupCompile.lref
